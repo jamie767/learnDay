@@ -31,7 +31,7 @@
 ### Enter a Service Wrapper
 * In order to pass your test its best to wrap the google.maps in a service that’s only job is to serve up a brand new object. Taking in a divId and a map object.
 
-<div><img src="pics/MapService.png" /> <img src="pics/MapServiceTest.png"/></div>
+<div><img src="./pics/MapService.png" /> <img src="./pics/MapServiceTest.png"/></div>
 
 #HSLIDE
 ### Our Code Now Looks like this
@@ -39,15 +39,17 @@
 
 #HSLIDE
 ### GeocodeLocations and testing Callbacks
-* When you have an address coming and you want to display it on your map. You must get the co-ordinates by calling that google service. See the problem?
-* more calls to google.maps.Geocoder() that your tests won’t recognize.
+* When you have an address coming and you want to display it on your map. You must get the co-ordinates by calling that google service. 
 
 #HSLIDE
 <img src="pics/officialMapsGeo.png" />
 
+#HSLIDE
+* See the problem?
+* more calls to google.maps.Geocoder() that your tests won’t recognize.
+* We can easily put the google.maps.Geocoder() into our service and test the same way as before.
 
 #HSLIDE 
-* We can easily put the google.maps.Geocoder() into our service and test the same way as before.
 * Testing the geocode.geocode() Callback however is the most trouble
 
 #HSLIDE
@@ -70,7 +72,7 @@
 
 #HSLIDE
 ### Final Code
-<img src="pics/NewMapCode.png" />
+<img src="pics/FinalMapCode.png" />
 
 #HSLIDE
 * for more google maps testing and life cycle testing with react check out our project https://github.allstate.com/RelationshipPlatform/allstate-rp-app-intelligence or grab one of us and we’ll be happy to pair.
