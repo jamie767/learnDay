@@ -11,13 +11,13 @@
 ### Getting Started With Google Maps
 * the first thing you need to do when doing google maps is to insert the script so that google will initialize. This is usually done in your index.js but it will be ok so long as it is inserted before the first call to google.
 
-<img src="pics/googleMapScriptTag.png" style="height: 1000px;"/>
+<img src="pics/googleMapScriptTag.png"/>
  
 
 #HSLIDE
 *To do a basic map you need a div with an id that the map can be inserted into. Normally the map code would look like this (ripped straight from google maps api tutorial)
 
-<img src="pics/simpleMap.png" style="height: 500px;"/>
+<img src="pics/simpleMap.png"/>
 
 *the problem with this is that when testing your javascript hasn’t been compiled and there for google.maps.Map has not been initialize and you will get an error.
 
@@ -43,13 +43,13 @@
 *When you have an address coming and you want to display it on your map. You must get the co-ordinates by calling that google service. See the problem?
 * more calls to google.maps.Geocoder() that your tests won’t recognize.
 
-<img src="pics/officialMapsGeo.png" style="height: 1000px;"/>
+<img src="pics/officialMapsGeo.png" style="height: 500px;"/>
 
 
 #HSLIDE 
 *We can easily put the google.maps.Geocoder() into our service and test the same way as before.
 *Testing the geocode.geocode() Callback however is the most trouble
-<img src="pics/FinalMapCode.png" style="height: 1000px;"/>
+<img src="pics/FinalMapCode.png" style="height: 500px;"/>
 
 #HSLIDE Testing the callback 
 *Theres two phases of testing the callback 
