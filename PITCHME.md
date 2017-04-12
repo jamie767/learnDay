@@ -31,7 +31,7 @@
 ### Enter a Service Wrapper
 * In order to pass your test its best to wrap the google.maps in a service that’s only job is to serve up a brand new object. Taking in a divId and a map object.
 
-<div><img src="./pics/MapService.png" /> <img src="./pics/MapServiceTest.png"/></div>
+<img src="pics/MapService.png" /> <img src="pics/MapServiceTest.png"/>
 
 #HSLIDE
 ### Our Code Now Looks like this
@@ -57,8 +57,8 @@
 
 #HSLIDE Testing the callback 
 * Theres two phases of testing the callback 
-  1. Making sure the invocation method is called with the correct parameters.
-  2. Testing what goes on inside in the callback
+* Making sure the invocation method is called with the correct parameters.
+* Testing what goes on inside in the callback
  
 #HSLIDE
 ###Making sure the invocation method is called with the correct parameters.
