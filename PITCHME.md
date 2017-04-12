@@ -78,6 +78,10 @@
 ### Final Code
 <img src="pics/FinalMapCode.png" />
 
+#HSLIDE
+### Summary
+* any google initalization calls should be extracted out into a service that returns the object
+* when testing a callback test both what its called with and the functionality inside the callback itself
 
 #HSLIDE
 *This should help get you 90-100% code coverage and with testing the most difficult part of the google maps(outside of life cycle testing)
