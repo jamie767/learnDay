@@ -1,11 +1,11 @@
 #HSLIDE
 ## A Brief info to Google Maps and How to Test it
- *By the end of this we should be able to have a map that plots addresses and can bring back a list of favorite places.
+ *By the end of this we should be able to have a map that plots addresses.
 *With test coverage!
 
 #HSLIDE
 
-<img src="pics/googleMapScriptTag.png" style="height: 1000px;"/>
+<img src="pics/googleMapScriptTag.png"/>
 
 #HSLIDE
 ### Getting Started With Google Maps
@@ -19,7 +19,7 @@
 
 <img src="pics/simpleMap.png"/>
 
-*the problem with this is that when testing your javascript hasn’t been compiled and there for google.maps.Map has not been initialize and you will get an error.
+* the problem with this is that when testing your javascript hasn’t been compiled and there for google.maps.Map has not been initialize and you will get an error.
 
 #HSLIDE
 
@@ -28,41 +28,46 @@
 ### Enter a Service Wrapper
 * In order to pass your test its best to wrap the google.maps in a service that’s only job is to serve up a brand new object. Taking in a divId and a map object.
 
-<img src="pics/MapService.png" style="height: 1000px;"/>
+<img src="pics/MapService.png" />
 
-<img src="pics/MapServiceTest.png" style="height: 1000px;"/>
+<img src="pics/MapServiceTest.png"/>
 
 
 #HSLIDE
 ### Our Code Now Looks like this
-<img src="pics/NewMapCode.png" style="height: 1000px;"/>
+<img src="pics/NewMapCode.png" />
 
 
 #HSLIDE
 ### GeocodeLocations and testing Callbacks
-*When you have an address coming and you want to display it on your map. You must get the co-ordinates by calling that google service. See the problem?
+* When you have an address coming and you want to display it on your map. You must get the co-ordinates by calling that google service. See the problem?
 * more calls to google.maps.Geocoder() that your tests won’t recognize.
 
-<img src="pics/officialMapsGeo.png" style="height: 500px;"/>
+<img src="pics/officialMapsGeo.png" />
 
 
 #HSLIDE 
 *We can easily put the google.maps.Geocoder() into our service and test the same way as before.
 *Testing the geocode.geocode() Callback however is the most trouble
-<img src="pics/FinalMapCode.png" style="height: 500px;"/>
+<img src="pics/FinalMapCode.png"/>
 
 #HSLIDE Testing the callback 
-*Theres two phases of testing the callback 
-1.Making sure the invocation method is called with the correct parameters.
-2. Testing what goes on inside in the callback
+* Theres two phases of testing the callback 
+ 1. Making sure the invocation method is called with the correct parameters.
+ 2. Testing what goes on inside in the callback
  
 #HSLIDE
 ###Making sure the invocation method is called with the correct parameters.
-<img src="pics/callbackTestingTop.png" style="height: 1000px;"/>
+<img src="pics/callbackTestingTop.png"/>
 
 #HSLIDE
-###Testing inside the callback- this gets a little inception like...
-<img src="pics/callbackTestingBottom.png" style="height: 1000px;"/>
+###Testing inside the callback
+* this gets a little inception like...
+
+<img src="pics/callbackTestingBottom.png"/>
 
 #HSLIDE
-### for more google maps testing and life cycle testing with react check out our project https://github.allstate.com/RelationshipPlatform/allstate-rp-app-intelligence or grab one of us and we’ll be happy to pair.
+* for more google maps testing and life cycle testing with react check out our project https://github.allstate.com/RelationshipPlatform/allstate-rp-app-intelligence or grab one of us and we’ll be happy to pair.
+
+#HSLIDE
+###Big thanks to Andrew Kyle for showing me gitpitch :)
