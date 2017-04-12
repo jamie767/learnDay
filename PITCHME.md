@@ -32,6 +32,8 @@
 * In order to pass your test its best to wrap the google.maps in a service that’s only job is to serve up a brand new object. Taking in a divId and a map object.
 
 <img src="pics/MapService.png" /> 
+
+#HSLIDE
 <img src="pics/MapServiceTest.png"/>
 
 #HSLIDE
