@@ -31,7 +31,8 @@
 ### Enter a Service Wrapper
 * In order to pass your test its best to wrap the google.maps in a service that’s only job is to serve up a brand new object. Taking in a divId and a map object.
 
-<img src="pics/MapService.png" /> <img src="pics/MapServiceTest.png"/>
+<img src="pics/MapService.png" /> 
+<img src="pics/MapServiceTest.png"/>
 
 #HSLIDE
 ### Our Code Now Looks like this
@@ -39,7 +40,7 @@
 
 #HSLIDE
 ### GeocodeLocations and testing Callbacks
-* When you have an address coming and you want to display it on your map. You must get the co-ordinates by calling that google service. 
+* When you have an address coming in from the UI and you want to display it on your map. You must get the co-ordinates by calling that google service. 
 
 #HSLIDE
 <img src="pics/officialMapsGeo.png" />
@@ -52,14 +53,15 @@
 #HSLIDE 
 * Testing the geocode.geocode() Callback however is the most trouble
 
+#HSLIDE 
+###Testing the callback 
+* There's two phases of testing the callback 
+ 1. Making sure the invocation method is called with the correct parameters.
+ 2. Testing what goes on inside in the callback
+
 #HSLIDE
 <img src="pics/FinalMapCode.png"/>
 
-#HSLIDE Testing the callback 
-* Theres two phases of testing the callback 
-* Making sure the invocation method is called with the correct parameters.
-* Testing what goes on inside in the callback
- 
 #HSLIDE
 ###Making sure the invocation method is called with the correct parameters.
 <img src="pics/callbackTestingTop.png"/>
@@ -74,7 +76,9 @@
 ### Final Code
 <img src="pics/FinalMapCode.png" />
 
+
 #HSLIDE
+*This should help get you 90-100% code coverage and with testing the most difficult part of the google maps(outside of life cycle testing)
 * for more google maps testing and life cycle testing with react check out our project https://github.allstate.com/RelationshipPlatform/allstate-rp-app-intelligence or grab one of us and we’ll be happy to pair.
 
 #HSLIDE
